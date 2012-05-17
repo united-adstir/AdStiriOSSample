@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AdStir/ASTAdView.h>
+#import <AdStir/ASTDelegateProtocol.h>
 
-@interface TestViewController : UIViewController
+@interface TestViewController : UIViewController <ASTDelegateProtocol>{
+    ASTAdView * adView_;
+}
+@property (retain) IBOutlet ASTAdView *adView;
 
 @end

@@ -15,6 +15,12 @@
 		96669D521564E34D006D7B56 /* TestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96669D511564E34D006D7B56 /* TestAppDelegate.m */; };
 		96669D551564E34D006D7B56 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96669D541564E34D006D7B56 /* TestViewController.m */; };
 		96669D581564E34D006D7B56 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96669D561564E34D006D7B56 /* TestViewController.xib */; };
+		96669D661564E403006D7B56 /* AdStir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96669D651564E403006D7B56 /* AdStir.framework */; };
+		96669D691564E421006D7B56 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 96669D681564E421006D7B56 /* JSONKit.m */; };
+		96669D6B1564E436006D7B56 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96669D6A1564E436006D7B56 /* QuartzCore.framework */; };
+		96669D6D1564E440006D7B56 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96669D6C1564E440006D7B56 /* SystemConfiguration.framework */; };
+		96669D6F1564E449006D7B56 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96669D6E1564E449006D7B56 /* MediaPlayer.framework */; };
+		96669D711564E450006D7B56 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96669D701564E450006D7B56 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +28,22 @@
 		96669D411564E34D006D7B56 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96669D431564E34D006D7B56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96669D451564E34D006D7B56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		96669D491564E34D006D7B56 /* AdStirTestApp-Info.plist */ = {isa = PBXFileReference; path = "AdStirTestApp-Info.plist"; sourceTree = "<group>"; };
+		96669D491564E34D006D7B56 /* AdStirTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdStirTestApp-Info.plist"; sourceTree = "<group>"; };
 		96669D4B1564E34D006D7B56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96669D4D1564E34D006D7B56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		96669D4F1564E34D006D7B56 /* AdStirTestApp-Prefix.pch */ = {isa = PBXFileReference; path = "AdStirTestApp-Prefix.pch"; sourceTree = "<group>"; };
-		96669D501564E34D006D7B56 /* TestAppDelegate.h */ = {isa = PBXFileReference; path = TestAppDelegate.h; sourceTree = "<group>"; };
+		96669D4F1564E34D006D7B56 /* AdStirTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdStirTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		96669D501564E34D006D7B56 /* TestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
 		96669D511564E34D006D7B56 /* TestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = "<group>"; };
-		96669D531564E34D006D7B56 /* TestViewController.h */ = {isa = PBXFileReference; path = TestViewController.h; sourceTree = "<group>"; };
+		96669D531564E34D006D7B56 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		96669D541564E34D006D7B56 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		96669D571564E34D006D7B56 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TestViewController.xib; sourceTree = "<group>"; };
+		96669D651564E403006D7B56 /* AdStir.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdStir.framework; sourceTree = "<group>"; };
+		96669D671564E421006D7B56 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		96669D681564E421006D7B56 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		96669D6A1564E436006D7B56 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		96669D6C1564E440006D7B56 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		96669D6E1564E449006D7B56 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		96669D701564E450006D7B56 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +51,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96669D711564E450006D7B56 /* CoreLocation.framework in Frameworks */,
+				96669D6F1564E449006D7B56 /* MediaPlayer.framework in Frameworks */,
+				96669D6D1564E440006D7B56 /* SystemConfiguration.framework in Frameworks */,
+				96669D6B1564E436006D7B56 /* QuartzCore.framework in Frameworks */,
 				96669D421564E34D006D7B56 /* UIKit.framework in Frameworks */,
 				96669D441564E34D006D7B56 /* Foundation.framework in Frameworks */,
 				96669D461564E34D006D7B56 /* CoreGraphics.framework in Frameworks */,
+				96669D661564E403006D7B56 /* AdStir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +68,13 @@
 		96669D321564E34D006D7B56 = {
 			isa = PBXGroup;
 			children = (
+				96669D701564E450006D7B56 /* CoreLocation.framework */,
+				96669D6E1564E449006D7B56 /* MediaPlayer.framework */,
+				96669D6C1564E440006D7B56 /* SystemConfiguration.framework */,
+				96669D6A1564E436006D7B56 /* QuartzCore.framework */,
+				96669D671564E421006D7B56 /* JSONKit.h */,
+				96669D681564E421006D7B56 /* JSONKit.m */,
+				96669D651564E403006D7B56 /* AdStir.framework */,
 				96669D471564E34D006D7B56 /* AdStirTestApp */,
 				96669D401564E34D006D7B56 /* Frameworks */,
 				96669D3E1564E34D006D7B56 /* Products */,
@@ -164,6 +189,7 @@
 				96669D4E1564E34D006D7B56 /* main.m in Sources */,
 				96669D521564E34D006D7B56 /* TestAppDelegate.m in Sources */,
 				96669D551564E34D006D7B56 /* TestViewController.m in Sources */,
+				96669D691564E421006D7B56 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,9 +261,15 @@
 		96669D5C1564E34D006D7B56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/v1.3.0\"",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdStirTestApp/AdStirTestApp-Prefix.pch";
 				INFOPLIST_FILE = "AdStirTestApp/AdStirTestApp-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -246,9 +278,15 @@
 		96669D5D1564E34D006D7B56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/v1.3.0\"",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdStirTestApp/AdStirTestApp-Prefix.pch";
 				INFOPLIST_FILE = "AdStirTestApp/AdStirTestApp-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -273,6 +311,7 @@
 				96669D5D1564E34D006D7B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
