@@ -1,27 +1,28 @@
-//
-//  TestViewController.m
-//  AdStirTestApp
-//
-//  Created by reiji-terasaka on 12/05/17.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
-//
+/*
+ Copyright 2012 motionBEAT Inc.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+ http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+*/
 
 #import "TestViewController.h"
 
-@interface TestViewController ()
-
-@end
-
 @implementation TestViewController
-
-@synthesize adView = adView_;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    //self.adView = [ASTAdView requestWithAppId:@"MEDIA-ID" andSpotNo:@"SPOT-NO" andDelegate:self];
-    self.adView = [ASTAdView requestWithAppId:@"73743886" andSpotNo:@"2" andDelegate:self];
+    self.adView = [ASTAdView requestWithAppId:@"MEDIA-ID" andSpotNo:@"SPOT-NO" andDelegate:self];
     [self.view addSubview:self.adView];
 }
 
