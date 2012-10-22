@@ -25,6 +25,7 @@
 		9640DEF4162BEBB100F16605 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 9640DEF0162BEBB100F16605 /* CHANGELOG.md */; };
 		9640DEF5162BEBB100F16605 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9640DEF2162BEBB100F16605 /* JSONKit.m */; };
 		9640DEF6162BEBB100F16605 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9640DEF3162BEBB100F16605 /* README.md */; };
+		9651BB101634D1D800F8A4CB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9651BB0F1634D1D800F8A4CB /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		9640DEF1162BEBB100F16605 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		9640DEF2162BEBB100F16605 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		9640DEF3162BEBB100F16605 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9651BB0F1634D1D800F8A4CB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9651BB101634D1D800F8A4CB /* AdSupport.framework in Frameworks */,
 				9640DEED162BEA8E00F16605 /* SystemConfiguration.framework in Frameworks */,
 				9640DEEB162BEA8800F16605 /* CoreLocation.framework in Frameworks */,
 				9640DEE9162BEA7D00F16605 /* QuartzCore.framework in Frameworks */,
@@ -93,6 +96,7 @@
 		9640DEC0162BE5D300F16605 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9651BB0F1634D1D800F8A4CB /* AdSupport.framework */,
 				9640DEEC162BEA8E00F16605 /* SystemConfiguration.framework */,
 				9640DEEA162BEA8800F16605 /* CoreLocation.framework */,
 				9640DEE8162BEA7D00F16605 /* QuartzCore.framework */,
@@ -347,6 +351,7 @@
 				9640DEE3162BE5D300F16605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
