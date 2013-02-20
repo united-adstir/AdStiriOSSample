@@ -17,5 +17,9 @@ project.xcworkspace
 *.DS_Store
 *.swp
 *.out
-AdStir.framework
+
+# AdStir
+libAdStir.a
+libAdStir-*.a
+Adstir*.h
 

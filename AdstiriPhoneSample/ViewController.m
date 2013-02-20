@@ -1,5 +1,5 @@
 /*
- Copyright 2012 motionBEAT Inc.
+ Copyright 2012-2013 UNITED, inc.
  
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -15,28 +15,21 @@
  */
 
 #import "ViewController.h"
-#import <AdStir/ASTAdView.h>
+#import "AdstirView.h"
 
-@interface ViewController () <ASTDelegateProtocol>
-@property (nonatomic, retain) ASTAdView* adview;
+@interface ViewController () <AdstirViewDelegate>
+@property (nonatomic, retain) AdstirView* adview;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 -(void)viewWillAppear:(BOOL)animated{
-	self.adview = [ASTAdView requestWithAppId:@"MEDIA-ID" andSpotNo:@"SPOT-NO" andDelegate:self];
+	self.adview = [[[AdstirView alloc]initWithOrigin:CGPointMake(0, 0)]autorelease];
+	self.adview.media = @"MEDIA-ID";
+	self.adview.spot = SPOT-NO;
+	self.adview.rootViewController = self;
+	self.adview.delegate = self;
+	[self.adview start];
 	[[self.view viewWithTag:100] addSubview:self.adview];
 }
 
@@ -46,32 +39,16 @@
 	self.adview = nil;
 }
 
-// ASTDelegateProtocol
+// AdstirViewDelegate
 
-- (void) didFailToInitView:(NSString *)appId{
+- (void)adstirDidReceiveAd:(AdstirView*)adstirview{
+	
+}
+
+- (void)adstirDidFailToReceiveAd:(AdstirView*)adstirview{
 	[self.adview stop];
 	[self.adview removeFromSuperview];
 	self.adview = nil;
-}
-
-- (UIViewController *) currentViewController{
-	return self;
-}
-
-- (void) didFailToUpdateConfig{
-	NSLog(@"didFailToUpdateConfig");
-}
-
-- (void) didLoadAdView{
-	NSLog(@"didLoadAdView");
-}
-- (void) didFailToLoadAdView{
-	NSLog(@"didFailToLoadAdView");
-	[self.adview nextAd];
-}
-
-- (CGPoint) originOfAdView{
-	return CGPointMake(0, 0);
 }
 
 @end

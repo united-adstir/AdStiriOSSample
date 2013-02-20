@@ -18,14 +18,14 @@
 		9640DED8162BE5D300F16605 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9640DED7162BE5D300F16605 /* Default-568h@2x.png */; };
 		9640DEDB162BE5D300F16605 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9640DED9162BE5D300F16605 /* MainStoryboard.storyboard */; };
 		9640DEDE162BE5D300F16605 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9640DEDD162BE5D300F16605 /* ViewController.m */; };
-		9640DEE5162BE91E00F16605 /* AdStir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEE4162BE91E00F16605 /* AdStir.framework */; };
 		9640DEE9162BEA7D00F16605 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEE8162BEA7D00F16605 /* QuartzCore.framework */; };
 		9640DEEB162BEA8800F16605 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEEA162BEA8800F16605 /* CoreLocation.framework */; };
 		9640DEED162BEA8E00F16605 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEEC162BEA8E00F16605 /* SystemConfiguration.framework */; };
 		9640DEF4162BEBB100F16605 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 9640DEF0162BEBB100F16605 /* CHANGELOG.md */; };
 		9640DEF5162BEBB100F16605 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9640DEF2162BEBB100F16605 /* JSONKit.m */; };
 		9640DEF6162BEBB100F16605 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9640DEF3162BEBB100F16605 /* README.md */; };
-		9651BB101634D1D800F8A4CB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9651BB0F1634D1D800F8A4CB /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		965E5F9E16D46E6700EB88DE /* libAdStir.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 965E5F9D16D46E6700EB88DE /* libAdStir.a */; };
+		965E5FA016D4707C00EB88DE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965E5F9F16D4707C00EB88DE /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +45,6 @@
 		9640DEDA162BE5D300F16605 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9640DEDC162BE5D300F16605 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9640DEDD162BE5D300F16605 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9640DEE4162BE91E00F16605 /* AdStir.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdStir.framework; sourceTree = "<group>"; };
 		9640DEE8162BEA7D00F16605 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9640DEEA162BEA8800F16605 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9640DEEC162BEA8E00F16605 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -53,7 +52,9 @@
 		9640DEF1162BEBB100F16605 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		9640DEF2162BEBB100F16605 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		9640DEF3162BEBB100F16605 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		9651BB0F1634D1D800F8A4CB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		965E5F9C16D46E6700EB88DE /* AdstirView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdstirView.h; sourceTree = "<group>"; };
+		965E5F9D16D46E6700EB88DE /* libAdStir.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdStir.a; sourceTree = "<group>"; };
+		965E5F9F16D4707C00EB88DE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +62,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9651BB101634D1D800F8A4CB /* AdSupport.framework in Frameworks */,
+				965E5FA016D4707C00EB88DE /* AdSupport.framework in Frameworks */,
 				9640DEED162BEA8E00F16605 /* SystemConfiguration.framework in Frameworks */,
 				9640DEEB162BEA8800F16605 /* CoreLocation.framework in Frameworks */,
 				9640DEE9162BEA7D00F16605 /* QuartzCore.framework in Frameworks */,
 				9640DEC2162BE5D300F16605 /* UIKit.framework in Frameworks */,
 				9640DEC4162BE5D300F16605 /* Foundation.framework in Frameworks */,
 				9640DEC6162BE5D300F16605 /* CoreGraphics.framework in Frameworks */,
-				9640DEE5162BE91E00F16605 /* AdStir.framework in Frameworks */,
+				965E5F9E16D46E6700EB88DE /* libAdStir.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,11 +97,12 @@
 		9640DEC0162BE5D300F16605 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9651BB0F1634D1D800F8A4CB /* AdSupport.framework */,
+				965E5F9C16D46E6700EB88DE /* AdstirView.h */,
+				965E5F9D16D46E6700EB88DE /* libAdStir.a */,
+				965E5F9F16D4707C00EB88DE /* AdSupport.framework */,
 				9640DEEC162BEA8E00F16605 /* SystemConfiguration.framework */,
 				9640DEEA162BEA8800F16605 /* CoreLocation.framework */,
 				9640DEE8162BEA7D00F16605 /* QuartzCore.framework */,
-				9640DEE4162BE91E00F16605 /* AdStir.framework */,
 				9640DEC1162BE5D300F16605 /* UIKit.framework */,
 				9640DEC3162BE5D300F16605 /* Foundation.framework */,
 				9640DEC5162BE5D300F16605 /* CoreGraphics.framework */,
@@ -301,6 +303,10 @@
 				GCC_PREFIX_HEADER = "AdstiriPhoneSample/AdstiriPhoneSample-Prefix.pch";
 				INFOPLIST_FILE = "AdstiriPhoneSample/AdstiriPhoneSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -322,6 +328,10 @@
 				GCC_PREFIX_HEADER = "AdstiriPhoneSample/AdstiriPhoneSample-Prefix.pch";
 				INFOPLIST_FILE = "AdstiriPhoneSample/AdstiriPhoneSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
