@@ -35,6 +35,8 @@
 
 -(void)viewWillDisappear:(BOOL)animated{
 	[self.adview stop];
+	self.adview.rootViewController = nil;
+	self.adview.delegate = nil;
 	[self.adview removeFromSuperview];
 	self.adview = nil;
 }
@@ -47,6 +49,8 @@
 
 - (void)adstirDidFailToReceiveAd:(AdstirView*)adstirview{
 	[self.adview stop];
+	self.adview.rootViewController = nil;
+	self.adview.delegate = nil;
 	[self.adview removeFromSuperview];
 	self.adview = nil;
 }
