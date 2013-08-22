@@ -15,42 +15,20 @@
  */
 
 #import "ViewController.h"
-#import "AdstirView.h"
+#import "AdstirWebView.h"
 
-@interface ViewController () <AdstirViewDelegate>
-@property (nonatomic, retain) AdstirView* adview;
+@interface ViewController ()
+@property (nonatomic, retain) AdstirWebView* adview;
 @end
 
 @implementation ViewController
 
 -(void)viewWillAppear:(BOOL)animated{
-	self.adview = [[[AdstirView alloc]initWithOrigin:CGPointMake(0, 0)]autorelease];
-	self.adview.media = @"MEDIA-ID";
-	self.adview.spot = SPOT-NO;
-	self.adview.rootViewController = self;
-	self.adview.delegate = self;
-	[self.adview start];
+	self.adview = [[[AdstirWebView alloc]initWithFrame:CGRectMake(0, 0, 320, 50) media:@"MEDIA-ID" spot:@"SPOT-NO"]autorelease];
 	[[self.view viewWithTag:100] addSubview:self.adview];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
-	[self.adview stop];
-	self.adview.rootViewController = nil;
-	self.adview.delegate = nil;
-	[self.adview removeFromSuperview];
-	self.adview = nil;
-}
-
-// AdstirViewDelegate
-
-- (void)adstirDidReceiveAd:(AdstirView*)adstirview{
-	
-}
-
-- (void)adstirDidFailToReceiveAd:(AdstirView*)adstirview{
-	[self.adview stop];
-	self.adview.rootViewController = nil;
-	self.adview.delegate = nil;
 	[self.adview removeFromSuperview];
 	self.adview = nil;
 }

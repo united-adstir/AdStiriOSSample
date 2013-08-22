@@ -19,7 +19,6 @@ project.xcworkspace
 *.out
 
 # AdStir
-libAdStir.a
-libAdStir-*.a
-Adstir*.h
+AdstirSDK/*.a
+AdstirSDK/*.h
 
