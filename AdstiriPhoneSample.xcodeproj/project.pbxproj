@@ -21,11 +21,8 @@
 		9640DEE9162BEA7D00F16605 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEE8162BEA7D00F16605 /* QuartzCore.framework */; };
 		9640DEEB162BEA8800F16605 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEEA162BEA8800F16605 /* CoreLocation.framework */; };
 		9640DEED162BEA8E00F16605 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEEC162BEA8E00F16605 /* SystemConfiguration.framework */; };
-		9640DEF4162BEBB100F16605 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 9640DEF0162BEBB100F16605 /* CHANGELOG.md */; };
-		9640DEF5162BEBB100F16605 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9640DEF2162BEBB100F16605 /* JSONKit.m */; };
-		9640DEF6162BEBB100F16605 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9640DEF3162BEBB100F16605 /* README.md */; };
-		965E5F9E16D46E6700EB88DE /* libAdStir.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 965E5F9D16D46E6700EB88DE /* libAdStir.a */; };
 		965E5FA016D4707C00EB88DE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965E5F9F16D4707C00EB88DE /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		96EE06D317C5F4830068290D /* libAdstirWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EE06D217C5F4830068290D /* libAdstirWebView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,13 +45,9 @@
 		9640DEE8162BEA7D00F16605 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9640DEEA162BEA8800F16605 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9640DEEC162BEA8E00F16605 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		9640DEF0162BEBB100F16605 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		9640DEF1162BEBB100F16605 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		9640DEF2162BEBB100F16605 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		9640DEF3162BEBB100F16605 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		965E5F9C16D46E6700EB88DE /* AdstirView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdstirView.h; sourceTree = "<group>"; };
-		965E5F9D16D46E6700EB88DE /* libAdStir.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdStir.a; sourceTree = "<group>"; };
 		965E5F9F16D4707C00EB88DE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		96EE06D117C5F4830068290D /* AdstirWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdstirWebView.h; path = AdstirSDK/AdstirWebView.h; sourceTree = "<group>"; };
+		96EE06D217C5F4830068290D /* libAdstirWebView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdstirWebView.a; path = AdstirSDK/libAdstirWebView.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +62,7 @@
 				9640DEC2162BE5D300F16605 /* UIKit.framework in Frameworks */,
 				9640DEC4162BE5D300F16605 /* Foundation.framework in Frameworks */,
 				9640DEC6162BE5D300F16605 /* CoreGraphics.framework in Frameworks */,
-				965E5F9E16D46E6700EB88DE /* libAdStir.a in Frameworks */,
+				96EE06D317C5F4830068290D /* libAdstirWebView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +72,6 @@
 		9640DEB2162BE5D300F16605 = {
 			isa = PBXGroup;
 			children = (
-				9640DEEF162BEBB100F16605 /* JSONKit */,
 				9640DEC7162BE5D300F16605 /* AdstiriPhoneSample */,
 				9640DEC0162BE5D300F16605 /* Frameworks */,
 				9640DEBE162BE5D300F16605 /* Products */,
@@ -97,8 +89,8 @@
 		9640DEC0162BE5D300F16605 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				965E5F9C16D46E6700EB88DE /* AdstirView.h */,
-				965E5F9D16D46E6700EB88DE /* libAdStir.a */,
+				96EE06D117C5F4830068290D /* AdstirWebView.h */,
+				96EE06D217C5F4830068290D /* libAdstirWebView.a */,
 				965E5F9F16D4707C00EB88DE /* AdSupport.framework */,
 				9640DEEC162BEA8E00F16605 /* SystemConfiguration.framework */,
 				9640DEEA162BEA8800F16605 /* CoreLocation.framework */,
@@ -135,17 +127,6 @@
 				9640DED7162BE5D300F16605 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9640DEEF162BEBB100F16605 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				9640DEF0162BEBB100F16605 /* CHANGELOG.md */,
-				9640DEF1162BEBB100F16605 /* JSONKit.h */,
-				9640DEF2162BEBB100F16605 /* JSONKit.m */,
-				9640DEF3162BEBB100F16605 /* README.md */,
-			);
-			path = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +185,6 @@
 				9640DED6162BE5D300F16605 /* Default@2x.png in Resources */,
 				9640DED8162BE5D300F16605 /* Default-568h@2x.png in Resources */,
 				9640DEDB162BE5D300F16605 /* MainStoryboard.storyboard in Resources */,
-				9640DEF4162BEBB100F16605 /* CHANGELOG.md in Resources */,
-				9640DEF6162BEBB100F16605 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +198,6 @@
 				9640DECE162BE5D300F16605 /* main.m in Sources */,
 				9640DED2162BE5D300F16605 /* AppDelegate.m in Sources */,
 				9640DEDE162BE5D300F16605 /* ViewController.m in Sources */,
-				9640DEF5162BEBB100F16605 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +284,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/AdstirSDK\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -331,6 +310,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/AdstirSDK\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
