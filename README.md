@@ -24,7 +24,7 @@ License
 
 Usage
 ----------------
-1. Copy AdStir SDK in project directory
+1. Copy libAdstirWebView.a AdstirWebView.h in AdstirSDK directory
 2. Edit ViewController.m 
  * MEDIA-ID and SPOT-NO
 
