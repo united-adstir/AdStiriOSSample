@@ -15,22 +15,57 @@
  */
 
 #import "ViewController.h"
-#import "AdstirWebView.h"
+#import "AdstirMraidView.h"
 
 @interface ViewController ()
-@property (nonatomic, retain) AdstirWebView* adview;
+@property (nonatomic, retain) AdstirMraidView* adView;
 @end
 
 @implementation ViewController
 
--(void)viewWillAppear:(BOOL)animated{
-	self.adview = [[[AdstirWebView alloc]initWithFrame:CGRectMake(0, 0, 320, 50) media:@"MEDIA-ID" spot:@"SPOT-NO"]autorelease];
-	[[self.view viewWithTag:100] addSubview:self.adview];
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        self.adView = nil;
+    }
+    return self;
 }
 
--(void)viewWillDisappear:(BOOL)animated{
-	[self.adview removeFromSuperview];
-	self.adview = nil;
+- (void)viewDidLoad
+{
+//    self.adView = [[[AdstirMraidView alloc] initWithAdSize:kAdstirAdSize320x50 media:@"MEDIA-ID" spot:0 /* Spot No as NSUInteger */] autorelease];
+    self.adView = [[[AdstirMraidView alloc] initWithAdSize:kAdstirAdSize320x50 media:@"MEDIA-aeeaa332" spot:1 /* Spot No as NSUInteger */] autorelease];
+
+	[[self.view viewWithTag:100] addSubview:self.adView];
+}
+
+- (void)viewDidUnload
+{
+    [self destroyAdView];
+}
+
+- (void)dealloc
+{
+    [self destroyAdView];
+
+    [super dealloc];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [self.adView start];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [self.adView stop];
+}
+
+- (void)destroyAdView
+{
+    if (nil != self.adView) {
+        self.adView.delegate = nil;
+        [self.adView removeFromSuperview];
+        self.adView = nil;
+    }
 }
 
 @end

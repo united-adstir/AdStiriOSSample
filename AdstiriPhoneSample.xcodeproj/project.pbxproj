@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140F096119129D0A004B88F4 /* libAdstirWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 140F096019129D0A004B88F4 /* libAdstirWebView.a */; };
 		9640DEC2162BE5D300F16605 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEC1162BE5D300F16605 /* UIKit.framework */; };
 		9640DEC4162BE5D300F16605 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEC3162BE5D300F16605 /* Foundation.framework */; };
 		9640DEC6162BE5D300F16605 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEC5162BE5D300F16605 /* CoreGraphics.framework */; };
@@ -22,10 +23,11 @@
 		9640DEEB162BEA8800F16605 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEEA162BEA8800F16605 /* CoreLocation.framework */; };
 		9640DEED162BEA8E00F16605 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640DEEC162BEA8E00F16605 /* SystemConfiguration.framework */; };
 		965E5FA016D4707C00EB88DE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965E5F9F16D4707C00EB88DE /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		96EE06D317C5F4830068290D /* libAdstirWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EE06D217C5F4830068290D /* libAdstirWebView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140F095F19129D0A004B88F4 /* AdstirMraidView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdstirMraidView.h; path = AdstirSDK/AdstirMraidView.h; sourceTree = "<group>"; };
+		140F096019129D0A004B88F4 /* libAdstirWebView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdstirWebView.a; path = AdstirSDK/libAdstirWebView.a; sourceTree = "<group>"; };
 		9640DEBD162BE5D300F16605 /* AdstiriPhoneSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdstiriPhoneSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9640DEC1162BE5D300F16605 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9640DEC3162BE5D300F16605 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,8 +48,6 @@
 		9640DEEA162BEA8800F16605 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9640DEEC162BEA8E00F16605 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		965E5F9F16D4707C00EB88DE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		96EE06D117C5F4830068290D /* AdstirWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdstirWebView.h; path = AdstirSDK/AdstirWebView.h; sourceTree = "<group>"; };
-		96EE06D217C5F4830068290D /* libAdstirWebView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdstirWebView.a; path = AdstirSDK/libAdstirWebView.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140F096119129D0A004B88F4 /* libAdstirWebView.a in Frameworks */,
 				965E5FA016D4707C00EB88DE /* AdSupport.framework in Frameworks */,
 				9640DEED162BEA8E00F16605 /* SystemConfiguration.framework in Frameworks */,
 				9640DEEB162BEA8800F16605 /* CoreLocation.framework in Frameworks */,
@@ -62,7 +63,6 @@
 				9640DEC2162BE5D300F16605 /* UIKit.framework in Frameworks */,
 				9640DEC4162BE5D300F16605 /* Foundation.framework in Frameworks */,
 				9640DEC6162BE5D300F16605 /* CoreGraphics.framework in Frameworks */,
-				96EE06D317C5F4830068290D /* libAdstirWebView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +89,8 @@
 		9640DEC0162BE5D300F16605 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				96EE06D117C5F4830068290D /* AdstirWebView.h */,
-				96EE06D217C5F4830068290D /* libAdstirWebView.a */,
+				140F095F19129D0A004B88F4 /* AdstirMraidView.h */,
+				140F096019129D0A004B88F4 /* libAdstirWebView.a */,
 				965E5F9F16D4707C00EB88DE /* AdSupport.framework */,
 				9640DEEC162BEA8E00F16605 /* SystemConfiguration.framework */,
 				9640DEEA162BEA8800F16605 /* CoreLocation.framework */,
@@ -283,8 +283,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/AdstirSDK\"",
+					"$(PROJECT_DIR)/AdstirSDK",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -309,8 +310,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/AdstirSDK\"",
+					"$(PROJECT_DIR)/AdstirSDK",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
