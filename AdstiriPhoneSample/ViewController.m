@@ -33,8 +33,7 @@
 
 - (void)viewDidLoad
 {
-//    self.adView = [[[AdstirMraidView alloc] initWithAdSize:kAdstirAdSize320x50 media:@"MEDIA-ID" spot:0 /* Spot No as NSUInteger */] autorelease];
-    self.adView = [[[AdstirMraidView alloc] initWithAdSize:kAdstirAdSize320x50 media:@"MEDIA-aeeaa332" spot:1 /* Spot No as NSUInteger */] autorelease];
+    self.adView = [[[AdstirMraidView alloc] initWithAdSize:kAdstirAdSize320x50 media:@"MEDIA-ID" spot:0 /* Spot No as NSUInteger */] autorelease];
 
 	[[self.view viewWithTag:100] addSubview:self.adView];
 }
