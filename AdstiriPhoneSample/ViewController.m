@@ -15,7 +15,7 @@
  */
 
 #import "ViewController.h"
-#import "AdstirMraidView.h"
+#import <AdstirAds/AdstirAds.h>
 
 @interface ViewController ()
 @property (nonatomic, retain) AdstirMraidView* adView;
