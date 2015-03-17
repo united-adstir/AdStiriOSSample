@@ -8,7 +8,7 @@ AdStir Developer's Guide
 
 License
 ----------------
-    Copyright 2012-2013 UNITED, inc.
+    Copyright 2012-2015 UNITED, inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ License
 
 Usage
 ----------------
-1. Copy libAdstirWebView.a AdstirWebView.h in AdstirSDK directory
+1. Copy AdstirAds.framework in AdstirSDK directory
 2. Edit ViewController.m 
  * MEDIA-ID and SPOT-NO
 
